@@ -1,4 +1,6 @@
 import Navbar from "./components/Navbar";
+import Panel from "./components/Panel/Panel";
+
 import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
@@ -6,6 +8,7 @@ function App() {
     <>
       <ThemeProvider value={[]}>
         <Navbar />
+        <Panel/>
       </ThemeProvider>
     </>
   );
