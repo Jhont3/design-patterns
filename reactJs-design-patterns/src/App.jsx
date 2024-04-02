@@ -1,9 +1,14 @@
-import "./App.css";
+import Navbar from "./components/Navbar";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
-  return <>
-    <h1>Hello world!</h1>
-  </>;
+  return (
+    <>
+      <ThemeProvider value={[]}>
+        <Navbar />
+      </ThemeProvider>
+    </>
+  );
 }
 
 export default App;
